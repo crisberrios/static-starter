@@ -20,8 +20,16 @@ module.exports = {
     src: src + "/images/**",
     dest: dest + "/images"
   },
+  pubfiles: {
+    src: src + "/public/**",
+    dest: dest
+  },
   markup: {
     src: src + "/htdocs/**",
+    dest: dest
+  },
+  jade: {
+    src: src + "/jade/*.jade",
     dest: dest
   },
   iconFonts: {
@@ -43,21 +51,9 @@ module.exports = {
     // A separate bundle will be generated for each
     // bundle config in the list below
     bundleConfigs: [{
-      entries: src + '/javascript/global.coffee',
+      entries: src + '/javascript/bundle.js',
       dest: dest,
-      outputName: 'global.js',
-      // Additional file extentions to make optional
-      extensions: ['.coffee', '.hbs'],
-      // list of modules to make require-able externally
-      require: ['jquery', 'backbone/node_modules/underscore']
-      // See https://github.com/greypants/gulp-starter/issues/87 for note about
-      // why this is 'backbone/node_modules/underscore' and not 'underscore'
-    }, {
-      entries: src + '/javascript/page.js',
-      dest: dest,
-      outputName: 'page.js',
-      // list of externally available modules to exclude from the bundle
-      external: ['jquery', 'underscore']
+      outputName: 'bundle.js'
     }]
   },
   production: {

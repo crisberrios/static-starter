@@ -1,0 +1,36 @@
+doctype html
+//if lt IE 7
+  html.no-js.lt-ie9.lt-ie8.lt-ie7(lang='')
+//if IE 7
+  html.no-js.lt-ie9.lt-ie8(lang='')
+//if IE 8
+  html.no-js.lt-ie9(lang='')
+// [if gt IE 8] <!
+html.no-js(lang='')
+  // <![endif]
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    title
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='apple-touch-icon', href='apple-touch-icon.png')
+    link(rel='stylesheet', href='css/normalize.min.css')
+    link(rel='stylesheet', href='css/main.css')
+    //if lt IE 9
+      script(src='//html5shiv.googlecode.com/svn/trunk/html5.js')
+      script.
+        window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\\/script>')
+  body
+    //if lt IE 9
+      p.browserupgrade
+        | You are using an
+        strong outdated
+        |  browser. Please
+        a(href='http://browsehappy.com/') upgrade your browser
+        |  to improve your experience.
+    block content
+      p Hello world!
+    block footer
+      include ./_analytics.jade
+      script(src='bundle.js')
