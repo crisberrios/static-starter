@@ -1,10 +1,10 @@
 {
-  "name": "HTML5 project starter",
-  "version": "0.0.1",
+  "name": "static-starter",
+  "version": "0.0.2",
   "description": "Boilerplate for developing static html sites",
   "repository": {
     "type": "git",
-    "url": "git://github.com/crisberrios/html5-boilerplate.git"
+    "url": "git://github.com/crisberrios/static-starter.git"
   },
   "browser": {
     "jquery": "velocity-animate/node_modules/jquery"

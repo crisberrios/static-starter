@@ -1,4 +1,4 @@
-var dest = "./build";
+var dest = './build';
 var src = './src';
 
 module.exports = {
@@ -9,27 +9,27 @@ module.exports = {
     }
   },
   sass: {
-    src: src + "/sass/**/*.{sass,scss}",
-    dest: dest,
+    src: src + '/sass/**/*.{sass,scss}',
+    dest: dest + '/css',
     settings: {
       indentedSyntax: true, // Enable .sass syntax!
       imagePath: 'images' // Used by the image-url helper
     }
   },
   images: {
-    src: src + "/images/**",
-    dest: dest + "/images"
+    src: src + '/images/**',
+    dest: dest + '/images'
   },
   pubfiles: {
-    src: src + "/public/**",
+    src: src + '/public/**',
     dest: dest
   },
   markup: {
-    src: src + "/htdocs/**",
+    src: src + '/htdocs/**',
     dest: dest
   },
   jade: {
-    src: src + "/jade/*.jade",
+    src: src + '/jade/*.jade',
     dest: dest
   },
   iconFonts: {
@@ -57,8 +57,8 @@ module.exports = {
     }]
   },
   production: {
-    cssSrc: dest + '/*.css',
-    jsSrc: dest + '/*.js',
-    dest: dest
+    cssSrc: dest + '/css/*.css',
+    jsSrc: dest + '/css/*.js',
+    dest: dest + '/css'
   }
 };
