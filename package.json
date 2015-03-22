@@ -1,6 +1,6 @@
 {
   "name": "static-starter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Boilerplate for developing static html sites",
   "repository": {
     "type": "git",
